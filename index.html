@@ -54,7 +54,7 @@
                 margin-left: 30%;
                 padding-right: 300px;
                 position: relative;
-                z-index: 99999999;
+                z-index: 999;
         }
 
         .name{
@@ -324,9 +324,26 @@ textarea, select{
 .navbar-blue{
   background-color: #0640DC;
 }
+
+.float{
+        position: fixed;
+        color:white;
+        right: 2%;
+        bottom: 3%;
+        z-index: 10000;
+    }
+    .float:hover{
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
 				</style>
     </head>
     <body>
+        <div class="float">
+            <a class="nav-link btn btn-success" href="#contact">Register Now</a> 
+         </div>
      <section id="navbar" class="pos"> <!-- Start of Navbar section-->
   <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Start of Nav Tag-->
   <a class="navbar-brand" href="#">Snikitha Siddavatam</a>
@@ -386,7 +403,7 @@ textarea, select{
             <div class="information container">
                 <div>
 <h1 class="na">SNIKITHA <span class="na-blue">SIDDAVATAM</span></h1>
-<a href="#contact"><button id='register' class="btn btn-success" style="float: right;">REGISTER NOW!</button></a>
+<!-- <a href="#contact"><button id='register' class="btn btn-success" style="position: absolute; right:2%; bottom: 97%;">REGISTER NOW!</button></a> -->
                         <h3 class="tag">Front-end Web Developer</h3>
 
             </div>
